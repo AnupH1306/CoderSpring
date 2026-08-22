@@ -41,7 +41,7 @@ public class AppConfig {
 //		return new OrderService(paymentService);
 //	}
 	
-	//Using filed injection
+	//Using field injection
 	//@Bean
 ////	public OrderService createOrder() {
 //		return new OrderService();
