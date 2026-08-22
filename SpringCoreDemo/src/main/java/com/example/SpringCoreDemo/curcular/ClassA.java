@@ -5,11 +5,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class ClassA {
 	
-	private ClassB classb;
-	
-	public ClassA(ClassB classb) {
-		this.classb = classb;
-	}
+//	private ClassB classb;
+//	
+//	public ClassA(ClassB classb) {
+//		this.classb = classb;
+//	}
 	
 	public void printA() {
 		classb.printB();
