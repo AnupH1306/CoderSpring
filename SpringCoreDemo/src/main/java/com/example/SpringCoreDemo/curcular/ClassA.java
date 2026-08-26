@@ -9,18 +9,23 @@ public class ClassA {
 //	@Autowired
 //	private ClassB classb;
 	
+	
+	private ClassB classb;
+	
 //	public ClassA(ClassB classb) {
 //		this.classb = classb;
 //	}
 	
-//	public void setClassB(ClassB classb) {
-//		this.classb=classb;
-//	}
-	
-	public ClassA() {
-		System.out.println("A is created");
-		ClassB b = new ClassB(); 
+	@Autowired
+	public void setClassB(ClassB classb) {
+		this.classb=classb;
 	}
+	
+	//Stack OverFlow Programme A depend on b And b Depend on A;
+//	public ClassA() {
+//		System.out.println("A is created");
+//		ClassB b = new ClassB(); 
+//	}
 	public void printA() {
 		classb.printB();
 		System.out.println("A is printed");
