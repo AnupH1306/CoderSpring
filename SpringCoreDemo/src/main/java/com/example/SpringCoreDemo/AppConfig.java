@@ -54,6 +54,10 @@ public class AppConfig {
 		OrderService os = new OrderService();
 		os.setPaymentservice(pay);
 		return os;
+		
+		
+		
+		
 	}
 }
 //@Bean Annotation is used to create object manually And its methods specific. But Managed by Spring.
