@@ -7,6 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
+import com.example.SpringCoreDemo.BeanLifeCycle.CartService1;
 import com.example.SpringCoreDemo.Payment.CardPayment;
 import com.example.SpringCoreDemo.Payment.PaymentService;
 import com.example.SpringCoreDemo.Payment.UPIPayment;
@@ -48,16 +49,22 @@ public class AppConfig {
 //	}
 	
 	//Or
-	@Bean
-	public OrderService createOrder() {
-		PaymentService pay = createCardPayment();
-		OrderService os = new OrderService();
-		os.setPaymentservice(pay);
-		return os;
+//	@Bean
+//	public OrderService createOrder() {
+//		PaymentService pay = createCardPayment();
+//		OrderService os = new OrderService();
+//		os.setPaymentservice(pay);
+//		return os;
+//}
 		
 		
+		@Bean(initMethod ="start" , destroyMethod = "stop")
+		public CartService1 getCartService() {
+			return new CartService1();
+			
+		}
 		
 		
 	}
-}
+
 //@Bean Annotation is used to create object manually And its methods specific. But Managed by Spring.

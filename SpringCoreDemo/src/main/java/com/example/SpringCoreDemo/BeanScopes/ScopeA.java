@@ -8,11 +8,11 @@ import com.example.SpringCoreDemo.OrderService;
 @Component 
 public class ScopeA {
 	
-	private ScopeDemo sd ;
-	public ScopeA(@Lazy ScopeDemo sd) {
-		this.sd = sd;
-		System.out.println("ScopeA Sercvice Created");
-	}
+//	private ScopeDemo sd ;
+//	public ScopeA(@Lazy ScopeDemo sd) {
+//		this.sd = sd;
+//		System.out.println("ScopeA Sercvice Created");
+//	}
 	
 	public void sayHi() {
 		sd.sayDeep();

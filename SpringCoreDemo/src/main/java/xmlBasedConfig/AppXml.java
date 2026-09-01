@@ -1,4 +1,6 @@
-package com.example.SpringCoreDemo;
+package xmlBasedConfig;
+
+
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -9,12 +11,12 @@ import com.example.SpringCoreDemo.BeanScopes.ScopeA;
 import com.example.SpringCoreDemo.BeanScopes.ScopeDemo;
 import com.example.SpringCoreDemo.curcular.ClassA;
 
-public class App 
+public class AppXml 
 {
     public static void main( String[] args )
     {
 //      ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-    	ApplicationContext context = new  ClassPathXmlApplicationContext("beans.xml");
+    	ApplicationContext context = new ClassPathXmlApplicationContext("xmlBasedConfig/beans2.xml");
       
 //      OrderService os = context.getBean(OrderService.class);
 //      os.placeOrder();
@@ -46,3 +48,4 @@ public class App
       
     }
 }
+
