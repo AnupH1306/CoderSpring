@@ -16,8 +16,10 @@
   </bean>
 <bean id = "orderService" class = "xmlBasedConfig.Osd">
 
-<constructor-arg  ref="upiService">
-</constructor-arg>
+<!--<constructor-arg ref="upiService">-->
+<!--</constructor-arg>-->
+
+<property name="PaymentServiceBean"  ref = "upiService"></property>
 
 </bean>
 

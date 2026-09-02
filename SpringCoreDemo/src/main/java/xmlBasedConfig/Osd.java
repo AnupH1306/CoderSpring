@@ -6,9 +6,13 @@ public class Osd {
 	
 	private PaymentServices paymentservice;
 	
-	public Osd(PaymentServices paymentservice) {
-		this.paymentservice = paymentservice;
-			System.out.println("Object is created");
+//	public Osd(PaymentServices paymentservice) {
+//		this.paymentservice = paymentservice;
+//			System.out.println("Object is created");
+//	}
+	
+	public void setPaymentServiceBean(PaymentServices paymentservice) {
+			this.paymentservice = paymentservice;
 	}
 	
 	public void palceOrder() {
