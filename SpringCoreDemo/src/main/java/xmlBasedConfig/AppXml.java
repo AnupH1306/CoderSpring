@@ -45,6 +45,9 @@ public class AppXml
       
 //      CartService1  cs = context.getBean(CartService1.class);
 //      System.out.println(cs.getValue(2));
+    	
+    	Osd osd = context.getBean(Osd.class);
+    	osd.palceOrder();
       
     }
 }

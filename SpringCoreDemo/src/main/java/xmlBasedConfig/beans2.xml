@@ -3,7 +3,22 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
+           
+<!--  <bean id ="paymentService" class = "xmlBasedConfig.Paymet.PaymentServices">-->
+  
+<!--  </bean>-->
 
-<bean id = "orderService" class = "xmlBasedConfig.Osd"/>
+ <bean id ="upiService" class = "xmlBasedConfig.Paymet.UPIPaymetServicexml">
+  
+  </bean>
+  <bean id ="cardService" class = "xmlBasedConfig.Paymet.CardPaymetServicexml">
+  
+  </bean>
+<bean id = "orderService" class = "xmlBasedConfig.Osd">
+
+<constructor-arg  ref="upiService">
+</constructor-arg>
+
+</bean>
 
 </beans>
