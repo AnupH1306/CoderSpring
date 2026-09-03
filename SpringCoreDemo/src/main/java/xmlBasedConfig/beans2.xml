@@ -16,9 +16,11 @@
   </bean>
 <bean id = "orderService" class = "xmlBasedConfig.Osd">
 
+<!--//Constructor injection-->
 <!--<constructor-arg ref="upiService">-->
 <!--</constructor-arg>-->
 
+<!--//Setter injection-->
 <property name="PaymentServiceBean"  ref = "upiService"></property>
 
 </bean>
