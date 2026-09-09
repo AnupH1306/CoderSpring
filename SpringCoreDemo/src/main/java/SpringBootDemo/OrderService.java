@@ -20,5 +20,8 @@ public class OrderService {
 		System.out.println("Order Palced");
 		paymentservice.pay();
 	}
-
+	
+	public void done() {
+		System.out.println("You can print anytrhing");
+		}
 }

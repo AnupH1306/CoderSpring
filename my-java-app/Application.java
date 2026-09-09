@@ -10,9 +10,6 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 		jkkiuhffnmcki8jiorhjc';
 		
-		rfkrofjfjif-fo3fpp0fjffij3fyfhhdeddiehfe8fycheefyfh;
-		
-		
-		GRzfffffffffffffffffffffff	}
+			}
 
 }
